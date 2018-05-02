@@ -1,0 +1,83 @@
+
+
+.manipulate, .stack-container{
+    height: 100%;
+    display: inline-block;
+    padding-top: 50px;
+}
+
+
+
+.stack-container{
+    height: 100%;
+    display: inline-block;
+
+}
+
+hr{
+    width: 50%;
+    background: #15a2b8;
+    margin-left: 0px;
+}
+
+
+
+.inputs{
+    text-align: left;
+}
+
+
+input{
+    padding: 10px;
+    margin: 20px;
+
+}
+
+.message, .summary, .legend, table{
+    display: none;
+}
+
+.summary, .legend{
+    border: 1px solid #15a2b8;
+    padding: 10px;
+    margin-top: 60px;
+    width: 50%
+
+
+}
+
+table{
+    margin-left: 100px;
+    text-align: center
+}
+
+table td{
+    border: 1px solid black;
+    min-width: 100px;
+
+}
+
+.legend-value{
+    display: inline-block;
+    height: 25px !important;
+    width: 40px !important;
+    margin-left: 10px;
+    border: 1px solid #15a2b8;
+}
+
+#return-addr{
+    background-color: #ff8080;
+}
+
+#buffer{
+    background-color: #ffff80;
+
+}
+
+#base-pointer{
+    background-color: #99ebff;
+}
+
+#main-frame{
+    background-color: #ff99ff;
+}

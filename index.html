@@ -1,0 +1,118 @@
+<html>
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/helper.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Bootstrap CDN -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- This div provides all other functionality -->
+                <div class="col-md-8 manipulate">
+                    <h3>Manipulate</h3>
+                    <hr>
+                    <div class="inputs">
+                        <div class="alert alert-danger message">
+                            <b id="alert-message"></b>
+                        </div>
+
+                        <input type="" name="buffer-size" id="buffer-size" placeholder="BUFFER SIZE"><br>
+
+                        <h5>Please enter an input that you would pass to function</h5>
+                        <input type="text" name="user-input" placeholder="EG AAAAAAAAAA">
+
+                        <button class="btn btn-info" id="attack">Attack</button>
+
+
+                    </div>
+
+
+                    <div class="summary">
+                        <h5>Summary</h5>
+                        <hr>
+                        <label for=""><b>Payload Size(Assumption): &nbsp</b></label><span id="payload-size"> </span><br>
+                        <label for="buffer-range"><b>Buffer Range:&nbsp </b></label><span id="buffer-range"></span></br>
+                        <label><b>Return Addr location: &nbsp</b></lable><span id="return-addr-loc"></span></br>
+                        <label for=""><b>Return Addr Value:&nbsp </b></label><span id="return-addr-value"></span><br>
+                        <label><b>Input Size: </b>&nbsp</label><span id="input-size"></span></br>
+                        <label><b>NOOP #: </b> &nbsp</label><span id="noop"></span>
+                    </div>
+
+
+
+                </div>
+
+
+                <!-- This div shows stack -->
+                <div class="col-md-4 stack-container">
+                    <h4>Stack</h4>
+                    <hr>
+                    <table>
+                        <tr>
+                            <th>Addr</th>
+                            <th>Value</th>
+
+                        </tr>
+                        <tr class="addr24"></tr>
+                        <tr class="addr23"></tr>
+                        <tr class="addr22"></tr>
+                        <tr class="addr21"></tr>
+                        <tr class="addr20"></tr>
+                        <tr class="addr19"></tr>
+                        <tr class="addr18"></tr>
+                        <tr class="addr17"></tr>
+                        <tr class="addr16"></tr>
+                        <tr class="addr15"></tr>
+                        <tr class="addr14"></tr>
+                        <tr class="addr13"></tr>
+                        <tr class="addr12"></tr>
+                        <tr class="addr11"></tr>
+                        <tr class="addr10"></tr>
+                        <tr class="addr9"></tr>
+                        <tr class="addr8"></tr>
+                        <tr class="addr7"></tr>
+                        <tr class="addr6"></tr>
+                        <tr class="addr5"></tr>
+                        <tr class="addr4"></tr>
+                        <tr class="addr3"></tr>
+                        <tr class="addr2"></tr>
+                        <tr class="addr1"></tr>
+                        <tr class="addr0"></tr>
+                    </table>
+
+                    <div class="legend">
+                        <label for="">Buffer:&nbsp</label><span class="legend-value" id="buffer"></span></br>
+                        <label for="">Return Address:&nbsp</label><span class="legend-value" id="return-addr"></span></br>
+                        <label for="">Base Pointer:&nbsp</label><span class="legend-value" id="base-pointer"></span></br>
+                        <label for="">Main Frame:&nbsp</label><span class="legend-value" id="main-frame"></span></br>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </body>
+
+</html>
